@@ -13,16 +13,16 @@
 <body>
 
  <header>
-    <section class="container-header" id="flex">
+    <section class="container-header">
      <figure>
       <img src="./assets/images/L.png" class="logo" />
      </figure>
         
     <nav>
         <ul>
-          <li><a href="#about" class="nav">about</a></li>
-          <li><a href="#projects" class="nav">projects</a></li>
-          <li><a href="#contact" class="nav">contact</a></li>
+          <li class="nav-li"><a href="#about" class="nav">about</a></li>
+          <li class="nav-li"><a href="#projects" class="nav">projects</a></li>
+          <li class="nav-li"><a href="#contact" class="nav">contact</a></li>
         </ul>
       </nav>
     </section>
@@ -31,26 +31,38 @@
  <main>
     <section class=container-greeting>
       <div class="hello">
-      <section>Hello,</section>
-      <section>I'm   <span class="greeting--letter">L</span>aura,</section>
-      <section>aspiring web developer</section>
+        <section>Hello,</section>
+        <section>I'm   <span class="greeting--letter">L</span>aura,</section>
+        <section>aspiring web developer</section>
       </div>
-      <img src="./assets/images/portrait.png" class="portrait" />
+      <div>
+      <img src="./assets/images/portrait.jpeg" class="portrait" />
+      </div>
     </section>
 
 
-    <section id="about">
-      <article><h1 class="about-title">about</h1>
-        <p></p>
+      <article id="about">
+        <div class="about-title"><h1>about</h1></div>
+      <div class="about-info">
+        <p>Welcome to my portfolio! My name is Laura Trapaga and I dream of
+          becoming a skilled web developer. I have many passions including sports,
+          gaming, and flying airplanes! Recently, I joined the Full Stack Coding 
+          Bootcamp at Georgia Tech in search of a career change. In particular, I
+          was looking to enter an industry that challenges me, while also bringing 
+          me joy and inspiration. I believe I've found it! Stay tuned as my 
+          knowledge of coding and my portfolio continues to grow!
+        </p>
+      </div>
       </article>
-    </section>
 
 
-    <section><h1 class="projects-title">projects</h1></section>
-    <section class="projects" id="projects">
+    <article id="projects">
+      <div class="projects-title"><h1>projects</h1></div>
+    </article>
+    <section class="projects-img">
       <div class="project2">
         <figure>
-          <img src="./assets/images/coming-soon-1.png" class="project2-img" />
+          <img src="./assets/images/coming-soon1.jpeg" class="project2-img" />
         </figure>
         <h2 class="img-caption">PROJECT 2</h2>
       </div>
@@ -66,14 +78,20 @@
 
        <div class="project3">
         <figure>
-            <img src="./assets/images/coming-soon-2.png" class="project3-img" />
+            <img src="./assets/images/coming-soon2.jpeg" class="project3-img" />
         </figure>
           <h2 class="img-caption">PROJECT 3</h2>
        </div>
-  </section>
- </main> 
+    </section>
 
- <footer>
-    
- </footer>
+    <article id="contact">
+       <div class="contact-title"><h1>contact</h1></div>
+       <div class="contact-info">
+        <ul class="contact-ul">
+          <li class="info">Phone: 678.552.9575 (c)</li>
+          <li class="info">Email: trapaga9@gmail.com</li>
+        </ul>
+        </div>
+      </article>
+ </main> 
 </html>

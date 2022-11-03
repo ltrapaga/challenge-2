@@ -1,8 +1,8 @@
 :root {
-  --laser-lemon: #EEFC57;
-  --mustard: #FCD757;
+  --middle-blue: #7EBDC3;
   --white: #ffffff;
   --black: #000500;
+  --middle-blue-green: #7FD1B9;
 }
 
   body {
@@ -16,8 +16,8 @@
 
   .container-header {
     justify-content: space-between;
-    justify-items: center;
-    margin-right: 4rem;
+    align-items: center;
+    margin-right: 3rem;
     display: flex;
 }
 
@@ -33,13 +33,13 @@
 }
 
 
-li {
+.nav-li {
   list-style-type: none;
   display: inline-block;
 }
 
 a {
-  color: var(--mustard);
+  color: var(--middle-blue-green);
   text-decoration: none;
 }
 
@@ -50,55 +50,82 @@ a {
   align-items: center;
   color: var(--white);
   width: 100%;
-  height: 50rem;
+  height: 70rem;
 
 }
 
 .greeting--letter {
   font-family: 'Jazz LET', 'fantasy';
-  color: var(--mustard);
+  color: var(--middle-blue-green);
   font-size: 10rem;
 }
 
 .hello {
-  font-size: 4rem;
+  font-size: 6rem;
   color: var(--white);
   font-family: 'Didot', serif;
   font-weight: lighter;
   display: block;
-  margin-left: 10rem;
+  margin-left: 8rem;
+  margin-bottom: 5rem;
 }
 
 .portrait {
-  max-width: 30rem;
-  height: 50rem;
-  border-radius: 8px;
+  max-width: 55rem;
+  height: 65rem;
   opacity: 100%;
-  display: block;
-  margin-right: 9rem;
-  flex-shrink: 2;
+}
+
+.about-title, .projects-title, .contact-title {
+  display: inline;
+  position: relative;
+  text-align: left;
 }
 
 h1 {
   font-family: 'Didot', serif;
   font-weight: lighter;
-  color: var(--mustard);
+  color: var(--white);
   font-size: 3rem;
-
-}
-
-.about-title, .projects-title{
   position: relative;
-  padding: 1rem;
-  margin-left: 10rem;
+  display: inline;
+  text-align: left;
+  margin-left: 4rem;
 }
 
-.projects {
+p {
+  position: block;
+  width: 60rem;
+  margin-left: 5rem;
+  color: var(--middle-blue-green);
+  font-size: 2.5rem;
+}
+
+.about-info, .contact-info {
+  color: var(--middle-blue-green);
+  font-size: 2rem;
+  position: relative;
+  display: inline;
+  padding: 5rem;
+  text-align: left;
+}
+
+.contact-ul {
+  list-style-type: none;
+  padding-inline-start: 5rem;
+}
+
+.info {
+  list-style-type: none;
+}
+
+.projects-img {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 80rem;
+  height: 65rem;
+  padding-bottom: 10rem;
 
 }
 .project1-img {
@@ -109,14 +136,14 @@ h1 {
 }
 
 .project2-img {
-  height: 40rem;
-  width: 40rem;
+  height: 25rem;
+  width: 35rem;
   border-radius: 8px;
 }
 
 .project3-img {
-  height: 40rem;
-  width: 40rem;
+  height: 25rem;
+  width: 35rem;
   border-radius: 8px;
   border: 1rem solid var(--white);
 
@@ -144,25 +171,27 @@ h2 {
 @media screen and (max-width: 768px) {
     .container-header {
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin: 0px;
     }
-
     .container-greeting {
       height: 35rem;
+      flex-direction: column;
+      justify-content: center;
+      width: auto;
     }
     .hello {
-      margin: 0px;
-      flex-direction: column;
-      align-items: center;
+      position: relative;
       text-align: center;
+      display: inline;
+      margin-left: 10rem;
     }
     .portrait {
       display: none;
     }
-    .projects {
+    .projects-img {
       flex-direction: column;
-      margin-top: 60rem;
+      margin-top: 50rem;
       align-items: center;
     }
     .project1, .project2, .project3 {
@@ -172,6 +201,24 @@ h2 {
     }
     h1 {
       text-align: center;
-      margin-right: 12rem;
     }
+    #contact {
+      margin-top: 60rem;
+  }
+}
+
+  @media screen and (max-width: 450px) {
+    .container-greeting {
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+    }
+    .logo {
+      margin-left: 2rem;
+    }
+    .hello {
+      margin: 0rem;
+    }
+  #contact {
+    margin-top: 4rem;
+}
   }
