@@ -1,48 +1,41 @@
 :root {
-  --middle-blue: #7EBDC3;
   --white: #ffffff;
   --black: #000500;
   --middle-blue-green: #7FD1B9;
 }
 
-  body {
+body {
     background-color: #000500;
   }
 
-  html {
+html {
     font-size: 62.5%;
   }
 
-
-  .container-header {
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 3rem;
-    display: flex;
+.container-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 3rem;
+  display: flex;
 }
 
-.logo {
+  .logo {
     height: 7.5rem;
     width: 7.5rem;
-}
+  }
 
-.nav {
-  font-family: 'Didot', serif;
-  font-size: 2.5rem;
-  padding: 2rem;
-}
+  .nav-li {
+    list-style-type: none;
+    display: inline-block;
+  }
 
-
-.nav-li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-a {
-  color: var(--middle-blue-green);
-  text-decoration: none;
-}
-
+  .nav {
+    font-family: 'Didot', serif;
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: var(--middle-blue-green);
+    text-decoration: none;
+  }
 
 .container-greeting {
   display: inline-flex;
@@ -51,81 +44,52 @@ a {
   color: var(--white);
   width: 100%;
   height: 70rem;
-
 }
 
-.greeting--letter {
-  font-family: 'Jazz LET', 'fantasy';
-  color: var(--middle-blue-green);
-  font-size: 10rem;
-}
+  .hello {
+    font-size: 6rem;
+    color: var(--white);
+    font-family: 'Didot', serif;
+    font-weight: lighter;
+    display: block;
+    margin-left: 8rem;
+    margin-bottom: 5rem;
+  }
 
-.hello {
-  font-size: 6rem;
-  color: var(--white);
-  font-family: 'Didot', serif;
-  font-weight: lighter;
-  display: block;
-  margin-left: 8rem;
-  margin-bottom: 5rem;
-}
+  .greeting-letter {
+    font-family: 'Jazz LET', 'fantasy';
+    color: var(--middle-blue-green);
+    font-size: 10rem;
+  }
 
-.portrait {
-  max-width: 55rem;
-  height: 65rem;
-  opacity: 100%;
-}
+  .portrait {
+    max-width: 55rem;
+    height: 65rem;
+  }
 
-.about-title, .projects-title, .contact-title {
-  display: inline;
-  position: relative;
-  text-align: left;
-}
+  h1 {
+    font-family: 'Didot', serif;
+    font-weight: lighter;
+    color: var(--white);
+    font-size: 3rem;
+    display: inline;
+    margin-left: 4rem;
+  } 
 
-h1 {
-  font-family: 'Didot', serif;
-  font-weight: lighter;
-  color: var(--white);
-  font-size: 3rem;
-  position: relative;
-  display: inline;
-  text-align: left;
-  margin-left: 4rem;
-}
+  p {
+    width: 60rem;
+    margin-left: 5rem;
+    color: var(--middle-blue-green);
+    font-size: 2.5rem;
+  }
 
-p {
-  position: block;
-  width: 60rem;
-  margin-left: 5rem;
-  color: var(--middle-blue-green);
-  font-size: 2.5rem;
-}
-
-.about-info, .contact-info {
-  color: var(--middle-blue-green);
-  font-size: 2rem;
-  position: relative;
-  display: inline;
-  padding: 5rem;
-  text-align: left;
-}
-
-.contact-ul {
-  list-style-type: none;
-  padding-inline-start: 5rem;
-}
-
-.info {
-  list-style-type: none;
-}
-
-.projects-img {
+.projects {
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 65rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 
 }
 .project1-img {
@@ -148,9 +112,6 @@ p {
   border: 1rem solid var(--white);
 
 }
-.project1, .project2, .project3 {
-  display: inline-block;
-}
 
 h2 {
   font-family: 'Didot', serif;
@@ -162,9 +123,21 @@ h2 {
 .img-caption {
   position: absolute;
   margin-left: 5rem;
-
 }
 
+.contact-info {
+  margin-bottom: 4rem;
+}
+.contact-ul {
+  list-style-type: none;
+  padding-inline-start: 5rem;
+}
+
+.info {
+  list-style-type: none;
+  font-size: 2rem;
+  color: var(--middle-blue-green);
+}
 
 
 
@@ -172,39 +145,31 @@ h2 {
     .container-header {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
     }
     .container-greeting {
       height: 35rem;
-      flex-direction: column;
-      justify-content: center;
-      width: auto;
+      display: block;
+      margin-bottom: 5rem;
     }
     .hello {
-      position: relative;
       text-align: center;
       display: inline;
-      margin-left: 10rem;
     }
     .portrait {
       display: none;
     }
-    .projects-img {
+    .projects {
       flex-direction: column;
-      margin-top: 50rem;
-      align-items: center;
+      margin-top: 40rem;
+      padding-bottom: 0rem;
     }
     .project1, .project2, .project3 {
       margin-top: 4rem;
       margin-bottom: 4rem;
-      align-items: center;
-    }
-    h1 {
-      text-align: center;
     }
     #contact {
-      margin-top: 60rem;
-  }
+      margin-top: 50rem;
+    }
 }
 
   @media screen and (max-width: 450px) {
@@ -218,7 +183,12 @@ h2 {
     .hello {
       margin: 0rem;
     }
-  #contact {
-    margin-top: 4rem;
-}
+
+    p { 
+      width: 35rem;
+      height: 45rem;
+    }
+    #contact {
+    margin-top: 45rem;
+    }
   }
