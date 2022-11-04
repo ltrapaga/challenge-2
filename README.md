@@ -12,4 +12,7 @@ To access my Advanced CSS: Professional Portfolio, visit the live site at https:
 
 ## Usage
 
-Screenshot:
+Screenshots:
+
+![image](https://user-images.githubusercontent.com/115514660/199863696-d07abf5d-c7bd-410b-8ba9-8676a47b5238.png)
+![image](https://user-images.githubusercontent.com/115514660/199863735-3327950a-c8d1-405f-be49-33ab0b7787cf.png)
