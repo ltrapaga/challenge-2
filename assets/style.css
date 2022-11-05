@@ -162,6 +162,8 @@ h2 {
     .projects {
       margin-top: 40rem;
       padding-bottom: 0rem;
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
     }
     .project1 {
