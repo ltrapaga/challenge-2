@@ -136,8 +136,26 @@ figcaption {
   color: var(--middle-blue-green);
 }
 
-
-
+@media screen and (max-width: 1189px) {
+  .projects {
+    margin-top: 40rem;
+    padding-bottom: 0rem;
+    flex-direction: column;
+  }
+  .project1 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    order: -1;
+  }
+  .project2, .project3 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+#contact {
+  margin-top: 50rem;
+}
+}
+    
 @media screen and (max-width: 768px) {
     .container-header {
       flex-direction: column;
