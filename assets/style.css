@@ -71,13 +71,14 @@ html {
     font-family: 'Didot', serif;
     font-weight: lighter;
     color: var(--white);
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: inline;
     margin-left: 4rem;
   } 
 
   p {
     width: 60rem;
+    height: 40rem;
     margin-left: 5rem;
     color: var(--middle-blue-green);
     font-size: 2.5rem;
@@ -113,16 +114,11 @@ html {
 
 }
 
-h2 {
+figcaption {
   font-family: 'Didot', serif;
-  font-weight: lighter;
+  font-weight: 500;
   color: var(--white);
-  font-size: 2rem;
-}
-
-.img-caption {
-  position: absolute;
-  margin-left: 5rem;
+  font-size: 1.5rem;
 }
 
 .contact-info {
@@ -148,7 +144,7 @@ h2 {
       justify-content: center;
     }
     .container-greeting {
-      height: 35rem;
+      height: 40rem;
       display: block;
       margin-bottom: 5rem;
     }
@@ -159,11 +155,13 @@ h2 {
     .portrait {
       display: none;
     }
+    p {
+      max-width: 90%;
+      min-height: 30rem;
+    }
     .projects {
       margin-top: 40rem;
       padding-bottom: 0rem;
-      display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
     }
     .project1 {
@@ -184,16 +182,21 @@ h2 {
     .container-greeting {
       margin-top: 4rem;
       margin-bottom: 2rem;
+      height: 40rem;
     }
     .logo {
       margin-left: 2rem;
+    }
+    .nav {
+      font-size: 2rem;
     }
     .hello {
       margin: 0rem;
     }
     p { 
-      width: 35rem;
-      height: 45rem;
+      max-width: 80%;
+      min-height: 40rem;
+      font-size: 2.25rem;
     }
     #contact {
     margin-top: 45rem;
