@@ -94,23 +94,23 @@ html {
 }
 
 .project1-img {
-  height: 60rem;
-  width: 40rem;
+  height: 50rem;
+  width: 30rem;
   border-radius: 8px;
   border: 1rem solid var(--white);
 }
 
 .project2-img {
-  height: 25rem;
-  width: 35rem;
+  height: 20rem;
+  width: 40rem;
   border-radius: 8px;
+  border: 1rem solid var(--white);
 }
 
 .project3-img {
-  height: 25rem;
-  width: 35rem;
+  height: 20rem;
+  width: 45rem;
   border-radius: 8px;
-  border: 1rem solid var(--white);
 
 }
 
