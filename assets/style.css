@@ -114,6 +114,14 @@ html {
 
 }
 
+
+.project4-img {
+  height: 20rem;
+  width: 45rem;
+  border-radius: 8px;
+
+}
+
 figcaption {
   font-family: 'Didot', serif;
   font-weight: 500;
